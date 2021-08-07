@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Create a train{% endblock %}
+
+{% block content %}
+<br>
+<h1>Save a route</h1>
+{% url 'save_route' as action %}
+{% include 'form.html' with button='Save' action=action %}
+
+{% endblock %}

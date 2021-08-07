@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <div class="logo_name">Find Route</div>
+        </div>
+        <i class='bx bx-menu-alt-left' id="btn"></i>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-city'></i>
+                    <span class="links_name">Cities</span>
+                </a>
+                <span class="tooltip">Cities</span>
+            </li>
+                <li>
+                <a href="">
+                    <i class='bx bxs-navigation' ></i>
+                    <span class="links_name">Find route</span>
+                </a>
+                <span class="tooltip">Find route</span>
+            </li>
+                <li>
+                <a href="">
+                    <i class='bx bxs-location-plus'></i>
+                    <span class="links_name">Additional</span>
+                </a>
+                <span class="tooltip">Additional</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <div class="name_job">
+                        <div class="name">Dmitry Korzhov</div>
+                        <div class="status">User</div>
+                    </div>
+                </div>
+            </div>
+            <i class='bx bxs-log-out' id="log_out"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+    let searchBtn = document.querySelector('.bx-search');
+
+    btn.onclick = function() {
+      sidebar.classList.toggle('active');
+    }
+
+    searchBtn.onclick = function() {
+      sidebar.classList.toggle('active');
+    }
+</script>
+
+
+</body>
+</html>
